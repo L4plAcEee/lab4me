@@ -1,0 +1,12 @@
+/* MemorialDay.css */
+#days-count {
+    font-size: 1.25rem;
+    color: #333;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#days-left {
+    color: #f46140; /* 可以调整颜色来突出显示剩余天数 */
+}

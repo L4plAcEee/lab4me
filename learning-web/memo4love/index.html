@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/MemorialDay.css">
+
+    <title>情侣空间</title>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>~宝宝今天吃什么~</h1>
+            <!-- 这里是显示天数差异的组件 -->
+            <div id="days-count">
+                自我们相爱已经过了 <span id="days-left">0</span> 天
+            </div>
+        </header>
+
+        <main id="content">
+            <!-- 展示对象列表将动态加载在这里 -->
+        </main>
+    </div>
+
+    <script type="module">
+        import { updateDaysCount } from './javascript/MemorialDay.js';
+
+        // 设置目标日期
+        const targetDate = new Date('2019-11-27'); // 目标日期
+
+        // 更新显示的天数
+        updateDaysCount(targetDate);
+    </script>
+    <script src="javascript/app.js"></script>
+</body>
+</html>
